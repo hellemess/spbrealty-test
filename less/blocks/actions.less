@@ -1,0 +1,45 @@
+div.actions {
+  .checkbox(2px, 24px);
+
+  display: flex;
+  align-items: baseline;
+  
+  width: 100%;
+  margin: 32px 0 20px;
+
+  @media (max-width: 599px) {
+    display: block;
+  }
+
+  label {
+    padding: 0 15px 0 50px;
+    
+    text-transform: lowercase;
+
+    @media (max-width: 599px) {
+      display: block;
+
+      margin-bottom: 10px;
+    }
+  }
+
+  ul {
+    display: flex;
+
+    @media (max-width: 599px) {
+      display: block;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-right: 10px;
+
+        @media (max-width: 599px) {
+          display: inline-block;
+          
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.checkbox(@top, @left) {
+  input:checked + label {
+    &::before {
+      background: @clr_yellow;
+    }
+
+    &::after {
+      content: '';
+    }
+  }
+  
+  label {
+    position: relative;
+
+    cursor: pointer;
+
+    &:hover
+    {
+      color: @clr_red;
+    }
+  
+    &::before
+    {
+      position: absolute;
+      top: @top;
+      left: @left;
+      
+      width: 14px;
+      height: 14px;
+
+      content: '';
+
+      border: 1px solid @clr_grey_700;
+    }
+
+    &::after
+    {
+      position: absolute;
+      top: @top + 3px;
+      left: @left + 3px;
+
+      width: 9px;
+      height: 5px;
+
+      border-bottom: 1px solid @clr_black;
+      border-left: 1px solid @clr_black;
+
+      transform: rotate(-45deg);
+    }
+  }
+}

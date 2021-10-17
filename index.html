@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Тестовое задание для компании «Петербургская недвижимость»</title>
+  </head>
+  <body>
+    <main>
+      <form action="/" method="GET">
+        <input id="search" type="search" name="search" placeholder="Введите ЖК / корпус / № квартиры / № паркинга">
+        <div class="pseudo-select">
+          <input id="select" type="checkbox" name="select">
+          <label for="select" data-empty="Все статусы"></label>
+          <ul>
+            <li>
+              <input id="option_booked" type="checkbox" name="option">
+              <label for="option_booked">Забронировано</label>
+            </li>
+            <li>
+              <input id="option_sold" type="checkbox" name="option">
+              <label for="option_sold">Продано</label>
+            </li>
+            <li>
+              <input id="option_active" type="checkbox" name="option">
+              <label for="option_active">Активно</label>
+            </li>
+          </ul>
+        </div>
+      </form>
+      <button class="empty-card" type="button">Очистить корзину</button>
+      <div class="actions">
+        <input id="select_all" type="checkbox" name="select_all">
+        <label for="select_all">Все</label>
+        <ul>
+          <li>
+            <button class="save" type="button">Сохранить</button>
+          </li>
+          <li>
+            <button class="send" type="button">Отправить</button>
+          </li>
+          <li>
+            <button class="delete" type="button">Удалить</button>
+          </li>
+        </ul>
+      </div>
+      <ul class="items">
+        <li>
+          <input id="select_item_1" type="checkbox" name="select_item">
+          <label for="select_item_1"></label>
+          <a href="#">
+            <figure>
+              <img src="img/layout.png" alt="Планировка">
+              <figcaption>
+                Добавлено 
+                <time datetime="2020-11-21">21/11/2020</time>
+              </figcaption>
+            </figure>
+            <h2>
+              7 733 300 руб. 
+              <span class="item-type  apartment">Квартира</span>
+            </h2>
+            <p class="building-info">
+              <strong>Чистое небо,</strong> 
+              корпус 10, III кв. 2022 г.
+            </p>
+            <div class="label  legal-body">Уступка от юр. лица</div>
+            <ul class="properties">
+              <li>кв. 62</li>
+              <li>234.38 м²</li>
+              <li>1 комн. кв.</li>
+              <li>7 этаж</li>
+              <li class="address">Лен. область, Всеволожский район, д. Кудрово, ул. Столичная, д. 5, к. 1</li>
+            </ul>
+          </a>
+        </li>
+        <li>
+          <input id="select_item_2" type="checkbox" name="select_item">
+          <label for="select_item_2"></label>
+          <a href="#">
+            <figure>
+              <img src="img/layout.png" alt="Планировка">
+              <figcaption>
+                Добавлено 
+                <time datetime="2020-11-21">21/11/2020</time>
+              </figcaption>
+            </figure>
+            <h2>
+              7 733 300 руб. 
+              <span class="item-type  apartment">Квартира</span>
+            </h2>
+            <p class="building-info">
+              <strong>Зеленый квартал на Пулковских высотах,</strong> 
+              корпус 10, III кв. 2022 г.
+            </p>
+            <div class="label  individual">Уступка от физ. лица</div>
+            <ul class="properties">
+              <li>кв. 62</li>
+              <li>234.38 м²</li>
+              <li>1 комн. кв.</li>
+              <li>7 этаж</li>
+              <li class="address">Комендантский пр., уч. 1 Каменка</li>
+            </ul>
+          </a>
+        </li>
+        <li>
+          <input id="select_item_3" type="checkbox" name="select_item">
+          <label for="select_item_3"></label>
+          <a href="#">
+            <figure>
+              <img src="img/layout.png" alt="Планировка">
+              <figcaption>
+                Добавлено 
+                <time datetime="2020-11-21">21/11/2020</time>
+              </figcaption>
+            </figure>
+            <h2>
+              800 300 руб. 
+              <span class="item-type  parking">Паркинг</span>
+            </h2>
+            <p class="building-info">
+              <strong>Зеленый квартал на Пулковских высотах,</strong> 
+              корпус 10, III кв. 2022 г.
+            </p>
+            <div class="label  booked">Забронировано</div>
+            <ul class="properties">
+              <li>№ 7-10-2 (ПИБ № 68)</li>
+              <li>15 м²</li>
+              <li class="address">Лен. область, Всеволожский район, д. Кудрово, ул. Столичная, д. 5, к. 1</li>
+            </ul>
+          </a>
+        </li>
+        <li>
+          <input id="select_item_4" type="checkbox" name="select_item">
+          <label for="select_item_4"></label>
+          <a href="#">
+            <figure>
+              <img src="img/layout.png" alt="Планировка">
+              <figcaption>
+                Добавлено 
+                <time datetime="2020-11-21">21/11/2020</time>
+              </figcaption>
+            </figure>
+            <h2>
+              800 300 руб. 
+              <span class="item-type  parking">Паркинг</span>
+            </h2>
+            <p class="building-info">
+              <strong>Зеленый квартал на Пулковских высотах,</strong> 
+              корпус 10, III кв. 2022 г.
+            </p>
+            <div class="label  sold">Продано</div>
+            <ul class="properties">
+              <li>№ 7-10-2 (ПИБ № 68)</li>
+              <li>15 м²</li>
+              <li class="address">Лен. область, Всеволожский район, д. Кудрово, ул. Столичная, д. 5, к. 1</li>
+            </ul>
+          </a>
+        </li>
+      </ul>
+    </main>
+    <script src="js/script.js" type="application/javascript"></script>
+  </body>
+</html>
